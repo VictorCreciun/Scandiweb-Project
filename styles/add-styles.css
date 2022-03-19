@@ -1,0 +1,97 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  margin-left: 75px;
+  font-size: 25px;
+}
+
+.nav-wrapper {
+  margin-top: 25px;
+  margin-right: 50px;
+}
+
+.butt {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input {
+  width: 300px;
+  height: 35px;
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.custom-select select {
+  width: 200px;
+  height: 35px;
+  margin-left: 100px;
+  font-size: 20px;
+}
+
+.custom-select select option {
+  font-size: 15px;
+}
+
+.data {
+  margin-left: 100px;
+  margin-top: 30px;
+  display: none;
+  display: flex;
+}
+
+.data input {
+  width: 200px;
+  height: 30px;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.data2 {
+  margin-left: 100px;
+  margin-top: 30px;
+  display: none;
+}
+
+.data2 input {
+  width: 200px;
+  height: 30px;
+  margin-top: 7px;
+  margin-left: 15px;
+}
+
+.sku_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-select {
+  display: flex;
+  flex-direction: column;
+}
