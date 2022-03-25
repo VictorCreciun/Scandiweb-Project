@@ -16,6 +16,6 @@
         }
     }
 
-    if(isset($_POST['ADD'])) {
+    if(isset($_POST['add'])) {
         header("Location: ../src/add-products.php");
     }
