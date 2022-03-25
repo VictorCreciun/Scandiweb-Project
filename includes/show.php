@@ -9,7 +9,7 @@
                         if($row["product_type"] == "DVD") {
                              ?>
                             <div class="wrapper">
-                                <input type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" class="delete-checkbox">
+                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" >
                                 <div class="object">
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
@@ -22,7 +22,7 @@
                         } elseif($row["product_type"] == "Book") {
                              ?>
                             <div class="wrapper">
-                                <input type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" class="delete-checkbox">
+                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" >
                                 <div class="object">
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
@@ -34,7 +34,7 @@
                         } elseif($row["product_type"] == "Furniture") {
                              ?>
                             <div class="wrapper">
-                                <input type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" class="delete-checkbox">
+                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" >
                                 <div class="object">
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
