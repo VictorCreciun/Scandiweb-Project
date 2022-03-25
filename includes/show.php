@@ -27,7 +27,7 @@
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
                                     <label><?=$row['price']?>$</label>
-                                    <label>Weight: <?=$row['weight']?> KG</label>
+                                    <label>Weight: <?=$row['weigth']?> KG</label>
                                 </div>
                             </div>
                     <?php

@@ -11,10 +11,10 @@
     $height = $_POST['height'];
     $width = $_POST['width'];
     $length = $_POST['length'];
-    $weight = $_POST['weight'];
+    $weigth = $_POST['weigth'];
     
-    $sql = "INSERT INTO products (sku, name, price, product_type, size, height, width, length, weight) 
-        VALUES ('$sku', '$name', '$price', '$product_type', '$size', '$height', '$width', '$length', '$weight');";
+    $sql = "INSERT INTO products (sku, name, price, product_type, size, height, width, length, weigth) 
+        VALUES ('$sku', '$name', '$price', '$product_type', '$size', '$height', '$width', '$length', '$weigth');";
 
 
     if(isset($_POST['save'])) {
@@ -43,8 +43,8 @@
                 header("Location: ../src/add-products.php?dimensions=empty");
                 exit(); 
         } 
-        else if($product_type == "Book" && empty($weight)) {
-                header("Location: ../src/add-products.php?weight=empty");
+        else if($product_type == "Book" && empty($weigth)) {
+                header("Location: ../src/add-products.php?weigth=empty");
                 exit();
         } 
         else {

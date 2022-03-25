@@ -69,7 +69,7 @@
                             echo "<label class='error'>Please insert the Size</label>";
                         } else if(strpos($fullUrl, "dimensions=empty") == true) {
                             echo "<label class='error'>Please insert the Dimensions</label>";
-                        } else if(strpos($fullUrl, "weight=empty") == true) {
+                        } else if(strpos($fullUrl, "weigth=empty") == true) {
                             echo "<label class='error'>Please insert the Weight</label>";
                         }?>
                 </div>
@@ -99,7 +99,7 @@
 
                 <div id="Book" class="data">
                     <p>Weight (KG)</p>
-                    <input type="number" name="weight">
+                    <input type="number" name="weigth">
                 </div>
             </div>
         </form> 
