@@ -5,10 +5,11 @@
         $checkboxes = $_POST['checkbox'];
         $extract = implode(',', $checkboxes);
 
-        $query = "DELETE FROM products WHERE sku IN ($extract)";
+        $query = "DELETE FROM products2 WHERE productId IN ($extract)";
         $query_run = mysqli_query($conn, $query);
 
         header("Location: ../index.php?delete=succes");
+        exit();
 
         if(!$checkboxes) {
             echo "Please select products to delete";

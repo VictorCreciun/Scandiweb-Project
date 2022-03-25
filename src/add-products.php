@@ -57,19 +57,19 @@
                     
                 <br>
                 <div class="custom-select">
-                    <select name="product_type" id="productType">
+                    <select name="productType" id="productType">
                         <option>Type:</option>
                         <option name="DVD" value="DVD">DVD</option>
                         <option name="furniture" value="Furniture">Furniture</option>
                         <option name="book" value="Book">Book</option>
                     </select>
-                    <?php if(strpos($fullUrl, "product_type=empty") == true) {
+                    <?php if(strpos($fullUrl, "productType=empty") == true) {
                             echo "<label class='error'>Please select a Product Type</label>";
                         } else if(strpos($fullUrl, "size=empty") == true) {
                             echo "<label class='error'>Please insert the Size</label>";
                         } else if(strpos($fullUrl, "dimensions=empty") == true) {
                             echo "<label class='error'>Please insert the Dimensions</label>";
-                        } else if(strpos($fullUrl, "weigth=empty") == true) {
+                        } else if(strpos($fullUrl, "weight=empty") == true) {
                             echo "<label class='error'>Please insert the Weight</label>";
                         }?>
                 </div>
@@ -99,7 +99,7 @@
 
                 <div id="Book" class="data">
                     <p>Weight (KG)</p>
-                    <input type="number" id="weight" name="weigth">
+                    <input type="number" id="weight" name="weight">
                 </div>
             </div>
         </form> 

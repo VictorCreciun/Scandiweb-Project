@@ -1,15 +1,15 @@
 <?php
                 include("dbConn.php");
 
-                $sql = "SELECT * FROM products";
+                $sql = "SELECT * FROM products2";
                 $result = mysqli_query($conn, $sql);
 
                 if(mysqli_num_rows($result) > 0) {
                     foreach($result as $row) {
-                        if($row["product_type"] == "DVD") {
+                        if($row["productType"] == "DVD") {
                              ?>
                             <div class="wrapper">
-                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" >
+                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['productId'];?>" >
                                 <div class="object">
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
@@ -19,22 +19,22 @@
                             </div>
 
                     <?php
-                        } elseif($row["product_type"] == "Book") {
+                        } elseif($row["productType"] == "Book") {
                              ?>
                             <div class="wrapper">
-                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" >
+                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['productId'];?>" >
                                 <div class="object">
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
                                     <label><?=$row['price']?>$</label>
-                                    <label>Weight: <?=$row['weigth']?> KG</label>
+                                    <label>Weight: <?=$row['weight']?> KG</label>
                                 </div>
                             </div>
                     <?php
-                        } elseif($row["product_type"] == "Furniture") {
+                        } elseif($row["productType"] == "Furniture") {
                              ?>
                             <div class="wrapper">
-                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['sku'];?>" >
+                                <input class="delete-checkbox" type="checkbox" name="checkbox[]" value="<?=$row['productId'];?>" >
                                 <div class="object">
                                     <label><?=$row['sku']?></label>
                                     <label><?=$row['name']?></label>
