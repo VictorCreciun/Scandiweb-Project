@@ -15,7 +15,7 @@
                 <h1 class="title">Product List</h1>
 
                 <div class="nav-wrapper">
-                    <button type="text" name="ADD" class="butt">ADD</button>                                                                                                                                  
+                    <button class="butt" type="text" name="ADD" text="ADD">ADD</button>                                                                                                                                  
                     <button class="butt" type="submit" name="delete" text="MASS DELETE">MASS DELETE</button>
                 </div>
             </nav>
