@@ -16,7 +16,7 @@
 
                 <div class="nav-wrapper">
                     <button class="butt" name="add" text="ADD">ADD</button>                                                                                                                                  
-                    <button type="submit" class="butt" text="MASS DEELTE" name="delete">MASS DEELTE</button>
+                    <button type="submit" class="butt" text="MASS DELETE" name="delete">MASS DELETE</button>
                 </div>
             </nav>
         </header>
