@@ -28,7 +28,7 @@
 
             <main id="add-item-form">
                 <div class="sku_div">
-                    <input class="input" type="text" name="sku" placeholder="SKU">
+                    <input class="input" type="text" id="sku" name="sku" placeholder="SKU">
 
                     <?php if(strpos($fullUrl, "sku=empty") == true) {
                             echo "<label class='error'>Please insert the SKU</label>";
@@ -38,7 +38,7 @@
                 <br>
 
                 <div class="name-div">
-                    <input class="input" type="text" name="name" placeholder="Name">
+                    <input class="input" type="text" id="name" name="name" placeholder="Name">
 
                     <?php if(strpos($fullUrl, "name=empty") == true) {
                             echo "<label class='error'>Please insert the Name</label>";
@@ -48,7 +48,7 @@
                 <br>
 
                 <div class="price-div">
-                    <input class="input" type="number" name="price" placeholder="Price($)">
+                    <input class="input" type="number" id="price" name="price" placeholder="Price($)">
 
                     <?php if(strpos($fullUrl, "price=empty") == true) {
                             echo "<label class='error'>Please insert the Price</label>";
@@ -78,28 +78,28 @@
             <div class="content">
                 <div class="data" id="DVD">
                     <p>Size (MB)</p>
-                    <input type="number" name="size">
+                    <input type="number" id="size" name="size">
                 </div>
 
                 <div id="Furniture" class="data2">
                         <div class="wrapper">
                             <p>Height (CM)</p>
-                            <input type="number" name="height">
+                            <input type="number" id="height" name="height">
                         </div>
                         <div class="wrapper">
                             <p>Width (CM)</p>
-                            <input type="number" name="width">
+                            <input type="number" id="width" name="width">
                         </div>
                         <div class="wrapper">
                             <p>Length (CM)</p>
-                            <input type="number" name="length"> 
+                            <input type="number" id="length" name="length"> 
                         </div>
                 </div>
                     
 
                 <div id="Book" class="data">
                     <p>Weight (KG)</p>
-                    <input type="number" name="weigth">
+                    <input type="number" id="weight" name="weigth">
                 </div>
             </div>
         </form> 
