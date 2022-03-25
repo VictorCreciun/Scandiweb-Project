@@ -15,8 +15,8 @@
                 <h1 class="title">Product List</h1>
 
                 <div class="nav-wrapper">
-                    <button class="butt" name="add">Add</button>                                                                                                                                  
-                    <button type="submit" name="delete" class="butt" id="delete-product-btn">Mass Delete</button>
+                    <button class="butt" name="add" text="ADD">Add</button>                                                                                                                                  
+                    <button type="submit" name="delete" class="butt" id="delete-product-btn" text="MASS DEELTE">Mass Delete</button>
                 </div>
             </nav>
         </header>
